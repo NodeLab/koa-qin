@@ -1,0 +1,34 @@
+{
+  "name": "koa-qin",
+  "version": "1.0.0",
+  "description": "qin powered by koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && mocha --reporter spec --no-timeouts --require co-mocha test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NodeLab/koa-qin.git"
+  },
+  "keywords": [
+    "qin"
+  ],
+  "author": "elrrrrrrr@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NodeLab/koa-qin/issues"
+  },
+  "homepage": "https://github.com/NodeLab/koa-qin#readme",
+  "dependencies": {
+    "co-mocha": "^1.1.2",
+    "koa": "^0.21.0",
+    "koa-router": "^5.1.2",
+    "koa-static": "^1.4.9",
+    "should": "^7.0.2",
+    "supertest": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^0.24.1",
+    "mocha": "^2.2.5"
+  }
+}
