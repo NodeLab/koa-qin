@@ -31,4 +31,10 @@ describe('lib/qin.js', function() {
       });
   });
 
+  it('should handle serve index', function*(done) {
+    request(app.callback())
+      .get('/')
+      .expect(200, done);
+  });
+
 });
