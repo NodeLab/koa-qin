@@ -5,6 +5,7 @@ let config = require('../fixtures/config');
 
 let request = require('supertest');
 let should = require('should');
+// let cheerio = require('cheerio');
 
 let app = Qin(config);
 

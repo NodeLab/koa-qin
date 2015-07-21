@@ -1,0 +1,40 @@
+{
+    "apiPath": {
+        "status": false,
+        "url": "http://192.168.217.85"
+    },
+    "htmlPath": "html/",
+    "routes": {
+        "/m/l": "/"
+    },
+    "ajaxList": {
+        "/test": {
+            "code": 200,
+            "msg": "hello world!"
+        },
+        "/post": {
+            "type": "post",
+            "body": {
+                "groupId": "189"
+            },
+            "result": {
+                "code": 200
+            },
+            "reject": {
+                "code": 500
+            }
+        },
+        "/query": {
+            "type": "get",
+            "query": {
+                "name": "qinjs"
+            },
+            "result": {
+                "code": 200
+            },
+            "reject": {
+                "code": 500
+            }
+        }
+    }
+}
