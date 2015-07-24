@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "qin powered by koa",
   "main": "index.js",
+  "bin": "bin/cli.js",
   "scripts": {
     "test": "eslint . && mocha --reporter spec --no-timeouts --require co-mocha test/**/*.test.js"
   },
