@@ -1,0 +1,28 @@
+{
+  "ajaxList": {
+      "/post": {
+          "type": "post",
+          "body": {
+              "groupId": "189"
+          },
+          "result": {
+              "code": 200
+          },
+          "reject": {
+              "code": 500
+          }
+      },
+      "/query": {
+          "type": "get",
+          "query": {
+              "name": "qinjs"
+          },
+          "result": {
+              "code": 200
+          },
+          "reject": {
+              "code": 500
+          }
+      }
+  }
+}
