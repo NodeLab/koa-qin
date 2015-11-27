@@ -38,4 +38,51 @@ describe('lib/qin.js', function() {
       .expect(200, done);
   });
 
+  //test GET
+  it('should response the get request in config.json', function*(done) {
+    request(app.callback())
+      .get('/query?name=qinjs')
+      .expect(200)
+      .end(function(err, res) {
+        should.not.exists(err);
+        res.text.should.eql('{"code":200}');
+        done();
+      });
+  });
+
+  it('should reject the get request in config.json', function*(done) {
+    request(app.callback())
+      .get('/query')
+      .expect(200)
+      .end(function(err, res) {
+        should.not.exists(err);
+        res.text.should.eql('{"code":500}');
+        done();
+      });
+  });
+
+  //test POST
+  it('should response the post request in  config.json', function*(done) {
+    request(app.callback())
+      .post('/post')
+      .send({ groupId: '189'})
+      .expect(200)
+      .end(function(err, res) {
+        should.not.exists(err);
+        res.text.should.eql('{"code":200}');
+        done();
+      });
+  });
+
+  it('should reject the post request in  config.json', function*(done) {
+    request(app.callback())
+      .post('/post')
+      .expect(200)
+      .end(function(err, res) {
+        should.not.exists(err);
+        res.text.should.eql('{"code":500}');
+        done();
+      });
+  });
+
 });
