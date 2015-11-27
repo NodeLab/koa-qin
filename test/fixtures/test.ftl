@@ -1,0 +1,2 @@
+<#assign name = "qinqinqin">
+${name}

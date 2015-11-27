@@ -85,4 +85,17 @@ describe('lib/qin.js', function() {
       });
   });
 
+  //test ftl
+  it('should handle and render freemarker file', function*(done) {
+    request(app.callback())
+      .get('/test/fixtures/test.ftl')
+      .expect(200)
+      .end(function(err, res) {
+        should.not.exists(err);
+        res.text.should.eql('qinqinqin\n');
+        done();
+      });
+  });
+
+
 });
