@@ -31,7 +31,7 @@
     "koa-router": "^5.1.2",
     "koa-serve-index": "^1.0.4",
     "koa-static": "^1.4.9",
-    "portfinder": "^0.4.0",
+    "portfinder": "^1.0.6",
     "should": "^7.0.2",
     "supertest": "^1.0.1"
   },
