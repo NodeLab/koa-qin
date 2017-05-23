@@ -28,7 +28,7 @@
     "fs-extra": "^0.22.1",
     "koa": "^0.21.0",
     "koa-body-parser": "^1.1.2",
-    "koa-router": "^5.1.2",
+    "koa-router": "^7.2.0",
     "koa-serve-index": "^1.0.4",
     "koa-static": "^1.4.9",
     "portfinder": "^0.4.0",
